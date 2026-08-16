@@ -28,9 +28,6 @@ const ThemeSwitcher = () => {
           weight="fill"
         />
       )}
-      <span className="font-dmmono text-sakura-bg inline w-12 text-center text-xs tracking-widest uppercase">
-        {isDark ? 'Light' : 'Dark'}
-      </span>
     </button>
   );
 };
