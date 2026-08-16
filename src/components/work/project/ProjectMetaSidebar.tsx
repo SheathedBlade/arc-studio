@@ -1,5 +1,5 @@
-import { motion } from 'motion/react';
 import type { Project } from '@/data/projects';
+import { motion } from 'motion/react';
 
 interface ProjectMetaSidebarProps {
   project: Project;

@@ -1,9 +1,9 @@
 import AppLink from '@/components/ui/AppLink';
 import type { Project } from '@/data/projects';
 import {
-  GithubLogoIcon,
+  ArrowLeftIcon,
   ArrowSquareOutIcon,
-  ArrowLeftIcon
+  GithubLogoIcon
 } from '@phosphor-icons/react';
 import { motion } from 'motion/react';
 
@@ -20,6 +20,13 @@ const ProjectOutcomes = ({ project }: ProjectOutcomesProps) => {
       transition={{ duration: 0.4, ease: 'easeOut' }}
       className="flex flex-wrap gap-3"
     >
+      <AppLink
+        to="/works"
+        className="border-sakura-stone/50 bg-sakura-card font-dmmono text-sakura-text hover:bg-sakura-surface inline-flex items-center gap-2 rounded-md border px-6 py-3 transition-colors"
+      >
+        <ArrowLeftIcon size={18} weight="bold" aria-hidden="true" />
+        <span>All Work</span>
+      </AppLink>
       {project.githubUrl && (
         <AppLink
           to={project.githubUrl}
@@ -38,13 +45,6 @@ const ProjectOutcomes = ({ project }: ProjectOutcomesProps) => {
           <ArrowSquareOutIcon size={18} weight="bold" aria-hidden="true" />
         </AppLink>
       )}
-      <AppLink
-        to="/works"
-        className="border-sakura-stone/50 bg-sakura-card font-dmmono text-sakura-text hover:bg-sakura-surface inline-flex items-center gap-2 rounded-md border px-6 py-3 transition-colors"
-      >
-        <ArrowLeftIcon size={18} weight="bold" aria-hidden="true" />
-        <span>All Work</span>
-      </AppLink>
     </motion.div>
   );
 };

@@ -1,5 +1,5 @@
-import EditorialDivider from '@/components/ui/EditorialDivider';
 import AppLink from '@/components/ui/AppLink';
+import EditorialDivider from '@/components/ui/EditorialDivider';
 import PageContainer from '@/components/ui/PageContainer';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { ArrowLeftIcon } from '@phosphor-icons/react';
