@@ -3,13 +3,19 @@ import NotFound from '@/components/layout/NotFound';
 import RootLayout from '@/components/layout/RootLayout';
 import { routeTransitionVariants } from '@/data/motionVariants';
 import AboutPage from '@/pages/AboutPage';
-import BehindTheCurtainPage from '@/pages/BehindTheCurtainPage';
 import ExperiencePage from '@/pages/ExperiencePage';
 import HomePage from '@/pages/HomePage';
+import ResonancePage from '@/pages/ResonancePage';
 import WorksPage from '@/pages/WorksPage';
 import WorksProjectPage from '@/pages/WorksProjectPage';
 import { AnimatePresence, motion } from 'motion/react';
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useLocation
+} from 'react-router-dom';
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual';
@@ -43,9 +49,10 @@ function AnimatedRoutes() {
             <Route path="/experience" element={<ExperiencePage />} />
             <Route path="/works" element={<WorksPage />} />
             <Route path="/works/:projectId" element={<WorksProjectPage />} />
+            <Route path="/resonance" element={<ResonancePage />} />
             <Route
               path="/behind-the-curtain"
-              element={<BehindTheCurtainPage />}
+              element={<Navigate to="/resonance" replace />}
             />
             <Route path="*" element={<NotFound />} />
           </Routes>
