@@ -39,7 +39,7 @@ The theme switcher in the navbar toggles between them.
 | `/experience`         | Experience | Timeline of roles, labs, and lessons           |
 | `/works`              | Works      | Featured project + mosaic grid of all work     |
 | `/works/:projectId`   | Project    | Per-project detail page                        |
-| `/behind-the-curtain` | The Craft  | Design decisions and technical details         |
+| `/resonance`           | Resonance | Personal notes on process and design             |
 
 ## Project Structure
 

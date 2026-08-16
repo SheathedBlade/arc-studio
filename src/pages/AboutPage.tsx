@@ -85,10 +85,10 @@ function AboutPage() {
             </p>
             <p className="font-dmmono text-sakura-stone mt-3 text-xs tracking-wide">
               <AppLink
-                to="/behind-the-curtain"
+                to="/resonance"
                 className="hover:text-sakura-accent transition-colors"
               >
-                How this site was made →
+                On process &amp; design →
               </AppLink>
             </p>
           </motion.div>
