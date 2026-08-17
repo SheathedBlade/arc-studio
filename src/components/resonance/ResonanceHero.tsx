@@ -55,7 +55,7 @@ const ResonanceHero = () => {
         </motion.p>
         <motion.p
           variants={heroItemVariants}
-          className="font-zenmaru text-sakura-cobble text-base leading-relaxed md:max-w-md md:text-lg"
+          className="font-zenmaru text-sakura-cobble justify-self-end text-right text-base leading-relaxed md:max-w-md md:text-lg"
         >
           {resonanceHero.intro}
         </motion.p>
