@@ -37,7 +37,7 @@ const ProjectMosaicCard = ({ project }: ProjectMosaicCardProps) => {
               {project.title}
             </h3>
             {project.year && (
-              <span className="font-dmmono text-sakura-stone shrink-0 text-xs tracking-widest">
+              <span className="font-dmmono text-sakura-stone group-hover/card:text-sakura-accent shrink-0 text-xs tracking-widest">
                 {project.year}
               </span>
             )}
