@@ -13,8 +13,8 @@ export interface ResonanceSectionContent {
   annotation?: string;
 }
 
-export const resonanceSections: ResonanceSectionContent[] = [
-  {
+export const resonanceSections = {
+  feelingFirst: {
     index: '01',
     title: 'A Feeling First',
     paragraphs: [
@@ -23,7 +23,7 @@ export const resonanceSections: ResonanceSectionContent[] = [
     ],
     annotation: 'Zen, but not too minimalist'
   },
-  {
+  worldAroundTheWork: {
     index: '02',
     title: 'The World Around the Work',
     paragraphs: [
@@ -32,7 +32,7 @@ export const resonanceSections: ResonanceSectionContent[] = [
     ],
     annotation: 'The UI should reflect its world'
   },
-  {
+  enoughToNotice: {
     index: '03',
     title: 'Enough to Notice',
     paragraphs: [
@@ -41,7 +41,7 @@ export const resonanceSections: ResonanceSectionContent[] = [
     ],
     annotation: 'Subtle, but you do notice it'
   },
-  {
+  betweenDesignAndCode: {
     index: '04',
     title: 'Between Design and Code',
     paragraphs: [
@@ -53,7 +53,7 @@ export const resonanceSections: ResonanceSectionContent[] = [
     ],
     annotation: 'Alternate design and code'
   }
-];
+} satisfies Record<string, ResonanceSectionContent>;
 
 export const resonancePullQuote =
   'If a design choice takes your attention away from what matters, it has become overbearing.';

@@ -247,7 +247,7 @@
     font-family: var(--font-dmmono);
     font-size: 0.8125rem;
     letter-spacing: 0.05em;
-    tabular-nums: lining-nums;
+    font-variant-numeric: lining-nums;
   }
 
   /* Accent rule — thin horizontal or vertical line */

@@ -44,10 +44,10 @@ function ResonancePage() {
 
         {/* Essay */}
         <div className="mx-auto max-w-3xl space-y-14 md:space-y-16">
-          <ResonanceSection section={resonanceSections[0]} />
+          <ResonanceSection section={resonanceSections.feelingFirst} />
           <ToneStudy />
-          <ResonanceSection section={resonanceSections[1]} />
-          <ResonanceSection section={resonanceSections[2]} />
+          <ResonanceSection section={resonanceSections.worldAroundTheWork} />
+          <ResonanceSection section={resonanceSections.enoughToNotice} />
         </div>
 
         {/* Pull quote centerpiece */}
@@ -56,7 +56,7 @@ function ResonancePage() {
         </div>
 
         <div className="mx-auto max-w-3xl space-y-14 md:space-y-16">
-          <ResonanceSection section={resonanceSections[3]} />
+          <ResonanceSection section={resonanceSections.betweenDesignAndCode} />
 
           {/* Closing */}
           <div>

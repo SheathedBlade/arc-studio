@@ -17,10 +17,6 @@ function HomePage() {
 
   return (
     <div className="relative mx-auto flex min-h-screen max-w-375 flex-col">
-      {/* <div className="pointer-events-none absolute inset-0 z-0 opacity-25">
-        <Scene />
-      </div> */}
-
       <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:pt-18">
         <div className="relative flex items-center lg:w-5/12">
           <motion.div
